@@ -1,6 +1,6 @@
 # RT Maker
 
-#### Ce plugin permet d'enrestrer un texte et de le coller à l'endroit du curseur.
+#### Ce plugin permet d'enregistrer un texte et de le coller à l'endroit du curseur.
 
 [![Build Status](https://github.com/BarRaider/streamdeck-tools/actions/workflows/dotnetcore.yml/badge.svg)](https://github.com/BarRaider/streamdeck-tools/actions/workflows/dotnetcore.yml)  [![NuGet](https://img.shields.io/nuget/v/streamdeck-tools.svg?style=flat)](https://www.nuget.org/packages/streamdeck-tools)
 
