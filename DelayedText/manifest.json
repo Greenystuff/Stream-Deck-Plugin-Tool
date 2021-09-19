@@ -22,7 +22,7 @@
   "Icon": "Images/pluginIcon",
   "URL": "https://github.com/Greenystuff/Stream-Deck-Plugin-Tool",
   "Version": "1.0",
-  "CodePath": "com.barraider.delayedtext",
+  "CodePath": "com.greenstuff.rtsaver",
   "Category": "Free Proxi",
   "CategoryIcon": "Images/categoryIcon",
   "OS": [
