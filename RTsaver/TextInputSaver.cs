@@ -10,10 +10,10 @@ using System.Threading.Tasks;
 using WindowsInput;
 using AsyncWindowsClipboard;
 
-namespace Delayedtext
+namespace RtSaver
 {
     [PluginActionId("com.greenstuff.rtsaver")]
-    public class DelayedTextInput : PluginBase
+    public class TextInputSaver : PluginBase
     {
         private class PluginSettings
         {
@@ -48,7 +48,7 @@ namespace Delayedtext
 
         #region Public Methods
 
-        public DelayedTextInput(SDConnection connection, InitialPayload payload) : base(connection, payload)
+        public TextInputSaver(SDConnection connection, InitialPayload payload) : base(connection, payload)
         {
             if (payload.Settings == null || payload.Settings.Count == 0)
             {

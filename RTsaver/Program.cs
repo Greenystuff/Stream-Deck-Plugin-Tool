@@ -3,7 +3,7 @@ using CommandLine;
 using System;
 using System.Collections.Generic;
 
-namespace Delayedtext
+namespace RtSaver
 {
     class Program
     {
