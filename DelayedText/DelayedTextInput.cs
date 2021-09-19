@@ -116,17 +116,9 @@ namespace Delayedtext
             inputRunning = true;
             await Task.Run(() =>
             {
-                InputSimulator iis = new InputSimulator();
-                string text = settings.InputText;
-                int delay = settings.Delay;
-
-                for (int idx = 0; idx < 1; idx++)
-                {
-                    
-                    iis.Keyboard.ModifiedKeyStroke(WindowsInput.Native.VirtualKeyCode.CONTROL, WindowsInput.Native.VirtualKeyCode.VK_V);
-                    
-                    Thread.Sleep(delay);
-                }
+              InputSimulator iis = new InputSimulator();
+              iis.Keyboard.ModifiedKeyStroke(WindowsInput.Native.VirtualKeyCode.CONTROL, WindowsInput.Native.VirtualKeyCode.VK_V);
+                
             });
             inputRunning = false;
         }
