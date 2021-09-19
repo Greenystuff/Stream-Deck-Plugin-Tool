@@ -1,0 +1,38 @@
+{
+  "Actions": [
+    {
+      "Icon": "Images/icon",
+      "Name": "RT Saver",
+      "States": [
+        {
+          "Image": "Images/bg",
+          "TitleAlignment": "bottom",
+          "FontSize": "16"
+        }
+      ],
+      "SupportedInMultiActions": true,
+      "Tooltip": "Tu ne t'emmerderas plus jamais avec tes RT",
+      "UUID": "com.greenstuff.rtsaver",
+      "PropertyInspectorPath": "PropertyInspector/RTMaker/Index.html"
+    }
+  ],
+  "Author": "GreenStuff",
+  "Description": "Plugin pour copier/coller des RT",
+  "Name": "RT Saver",
+  "Icon": "Images/pluginIcon",
+  "URL": "https://barraider.github.io/",
+  "Version": "1.0",
+  "CodePath": "com.barraider.delayedtext",
+  "Category": "Free Proxi",
+  "CategoryIcon": "Images/categoryIcon",
+  "OS": [
+    {
+      "Platform": "windows",
+      "MinimumVersion": "10"
+    }
+  ],
+  "SDKVersion": 2,
+  "Software": {
+    "MinimumVersion": "4.1"
+  }
+}
