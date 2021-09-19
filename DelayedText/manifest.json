@@ -20,7 +20,7 @@
   "Description": "Plugin pour copier/coller des RT",
   "Name": "RT Saver",
   "Icon": "Images/pluginIcon",
-  "URL": "https://barraider.github.io/",
+  "URL": "https://github.com/Greenystuff/Stream-Deck-Plugin-Tool",
   "Version": "1.0",
   "CodePath": "com.barraider.delayedtext",
   "Category": "Free Proxi",
