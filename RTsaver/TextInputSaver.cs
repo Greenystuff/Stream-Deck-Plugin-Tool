@@ -76,7 +76,7 @@ namespace RtSaver
         {
         }
 
-        public async Task CopyTextToClipboard(String textToCopy)
+        public async void CopyTextToClipboard(String textToCopy)
         {
             var clipboardService = new WindowsClipboardService();
             await clipboardService.SetTextAsync(textToCopy); // Sets the text
