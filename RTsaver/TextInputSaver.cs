@@ -21,20 +21,12 @@ namespace RtSaver
             {
                 PluginSettings instance = new PluginSettings();
                 instance.InputText = String.Empty; ;
-                instance.Delay = 1;
-                instance.EnterMode = false;
 
                 return instance;
             }
 
             [JsonProperty(PropertyName = "inputText")]
             public string InputText { get; set; }
-
-            [JsonProperty(PropertyName = "delay")]
-            public int Delay { get; set; }
-
-            [JsonProperty(PropertyName = "enterMode")]
-            public bool EnterMode { get; set; }
         }
 
         #region Private members
