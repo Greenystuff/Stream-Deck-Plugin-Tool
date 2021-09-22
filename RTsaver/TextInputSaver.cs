@@ -67,8 +67,12 @@ namespace RtSaver
             {
                 return;
             }
-            string text = settings.InputText;
-            CopyTextToClipboard(text);
+            
+            if (settings.InputText != "")
+            {
+                string text = settings.InputText;
+                CopyTextToClipboard(text);
+            }
         }
 
         public override void KeyReleased(KeyPayload payload)
@@ -126,7 +130,7 @@ namespace RtSaver
             await Task.Run(() =>
             {
               InputSimulator iis = new InputSimulator();
-              iis.Keyboard.ModifiedKeyStroke(WindowsInput.Native.VirtualKeyCode.CONTROL, WindowsInput.Native.VirtualKeyCode.VK_V); 
+              iis.Keyboard.ModifiedKeyStroke(WindowsInput.Native.VirtualKeyCode.CONTROL, WindowsInput.Native.VirtualKeyCode.VK_V);
             });
             inputRunning = false;
         }
