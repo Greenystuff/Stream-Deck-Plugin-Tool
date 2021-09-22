@@ -92,7 +92,7 @@ namespace RtSaver
             var clipboardService = new WindowsClipboardService();
             if (textToCopy != "")
             {
-                await clipboardService.SetTextAsync(textToCopy); // Sets the text
+                await clipboardService.SetTextAsync(textToCopy);
             }
         }
 
