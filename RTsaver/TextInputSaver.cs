@@ -59,12 +59,10 @@ namespace RtSaver
             }
         }
 
-        private async void SetImage(string path)
+        public async void SetImage(string path)
         {
-
-            var b64img = Convert.ToBase64String(File.ReadAllBytes(path), Base64FormattingOptions.None);
-            await Connection.SetImageAsync(b64img);
-
+            Image img = Image.FromFile(path);
+            await Connection.SetImageAsync(img);
         }
 
         public override void KeyPressed(KeyPayload payload)
@@ -77,15 +75,16 @@ namespace RtSaver
 
             string text = settings.InputText;
             CopyTextToClipboard(text);
-            string imagePath = "Images/Background_images/bg-administratif.png";
-            SetImage(imagePath);
+            
+            
 
         }
 
         public override void KeyReleased(KeyPayload payload)
         {
-            SendInput();
-
+            if (settings.InputText != "") {
+                SendInput();
+            }
         }
 
         public override void OnTick()
@@ -111,7 +110,8 @@ namespace RtSaver
             // New in StreamDeck-Tools v2.0:
             Tools.AutoPopulateSettings(settings, payload.Settings);
             Logger.Instance.LogMessage(TracingLevel.INFO, $"Settings loaded: {payload.Settings}");
-            
+            string imagePath = "Images/Background_images/" + settings.Background + ".png";
+            SetImage(imagePath);
 
         }
 
