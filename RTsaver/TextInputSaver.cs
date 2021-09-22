@@ -2,15 +2,10 @@
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading;
 using System.Threading.Tasks;
 using WindowsInput;
 using AsyncWindowsClipboard;
 using System.Drawing;
-using System.IO;
 
 namespace RtSaver
 {
@@ -116,7 +111,6 @@ namespace RtSaver
                 string imagePath = "Images/bg.png";
                 SetImage(imagePath);
             }
-            
         }
 
         public override void ReceivedGlobalSettings(ReceivedGlobalSettingsPayload payload)
@@ -132,12 +126,10 @@ namespace RtSaver
             await Task.Run(() =>
             {
               InputSimulator iis = new InputSimulator();
-              iis.Keyboard.ModifiedKeyStroke(WindowsInput.Native.VirtualKeyCode.CONTROL, WindowsInput.Native.VirtualKeyCode.VK_V);
-                
+              iis.Keyboard.ModifiedKeyStroke(WindowsInput.Native.VirtualKeyCode.CONTROL, WindowsInput.Native.VirtualKeyCode.VK_V); 
             });
             inputRunning = false;
         }
         #endregion
     }
-
 }
