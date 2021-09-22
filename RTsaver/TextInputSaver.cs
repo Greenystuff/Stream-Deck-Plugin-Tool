@@ -23,7 +23,7 @@ namespace RtSaver
             {
                 PluginSettings instance = new PluginSettings();
                 instance.InputText = String.Empty;
-                instance.Background = String.Empty;
+                instance.Background = "default";
 
                 return instance;
             }
@@ -72,12 +72,8 @@ namespace RtSaver
             {
                 return;
             }
-
             string text = settings.InputText;
             CopyTextToClipboard(text);
-            
-            
-
         }
 
         public override void KeyReleased(KeyPayload payload)
@@ -110,9 +106,17 @@ namespace RtSaver
             // New in StreamDeck-Tools v2.0:
             Tools.AutoPopulateSettings(settings, payload.Settings);
             Logger.Instance.LogMessage(TracingLevel.INFO, $"Settings loaded: {payload.Settings}");
-            string imagePath = "Images/Background_images/" + settings.Background + ".png";
-            SetImage(imagePath);
-
+            if (settings.Background != "default")
+            {
+                string imagePath = "Images/Background_images/" + settings.Background + ".png";
+                SetImage(imagePath);
+            }
+            else
+            {
+                string imagePath = "Images/bg.png";
+                SetImage(imagePath);
+            }
+            
         }
 
         public override void ReceivedGlobalSettings(ReceivedGlobalSettingsPayload payload)
