@@ -89,6 +89,19 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Images\Background_images\bg-administratif.png" />
+    <Content Include="Images\Background_images\bg-autre.png" />
+    <Content Include="Images\Background_images\bg-cloture.png" />
+    <Content Include="Images\Background_images\bg-dedo.png" />
+    <Content Include="Images\Background_images\bg-escalade.png" />
+    <Content Include="Images\Background_images\bg-manip.png" />
+    <Content Include="Images\Background_images\bg-message-court.png" />
+    <Content Include="Images\Background_images\bg-mobile.png" />
+    <Content Include="Images\Background_images\bg-resil.png" />
+    <Content Include="Images\Background_images\bg-swap.png" />
+    <Content Include="Images\Background_images\bg-technicien.png" />
+    <Content Include="Images\Background_images\bg-ticket-incident.png" />
+    <Content Include="Images\Background_images\bg-wifi.png" />
     <Content Include="Images\bg%402x.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -123,6 +136,7 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions>
     <VisualStudio>
