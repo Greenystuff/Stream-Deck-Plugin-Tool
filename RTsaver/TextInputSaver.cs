@@ -133,6 +133,7 @@ namespace RtSaver
               iis.Keyboard.ModifiedKeyStroke(WindowsInput.Native.VirtualKeyCode.CONTROL, WindowsInput.Native.VirtualKeyCode.VK_V);
             });
             inputRunning = false;
+            await Connection.ShowOk();
         }
         #endregion
     }
